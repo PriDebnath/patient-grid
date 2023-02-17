@@ -1,5 +1,5 @@
 import React from 'react'
-import callReceiver from "../../images/call-receiver.svg"
+import callReceiver from "../assets/images/call-receiver.svg"
 
 
 const PersonUi = (props) => {

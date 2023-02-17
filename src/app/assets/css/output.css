@@ -565,6 +565,22 @@ video {
   top: 50%;
 }
 
+.-right-10 {
+  right: -2.5rem;
+}
+
+.-top-\[6px\] {
+  top: -6px;
+}
+
+.-top-\[3px\] {
+  top: -3px;
+}
+
+.-right-5 {
+  right: -1.25rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -583,6 +599,10 @@ video {
 
 .m-auto {
   margin: auto;
+}
+
+.m-40 {
+  margin: 10rem;
 }
 
 .mx-2 {
@@ -649,6 +669,14 @@ video {
   margin-top: 2rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .block {
   display: block;
 }
@@ -685,10 +713,6 @@ video {
   width: 91.666667%;
 }
 
-.w-3\/12 {
-  width: 25%;
-}
-
 .w-3\/4 {
   width: 75%;
 }
@@ -721,16 +745,16 @@ video {
   width: 100%;
 }
 
+.w-7\/12 {
+  width: 58.333333%;
+}
+
 .min-w-\[600px\] {
   min-width: 600px;
 }
 
 .min-w-\[60px\] {
   min-width: 60px;
-}
-
-.min-w-\[700px\] {
-  min-width: 700px;
 }
 
 .min-w-\[80px\] {
@@ -787,6 +811,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded {
@@ -923,6 +951,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -953,9 +986,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-4 {
@@ -964,6 +997,10 @@ video {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
 }
 
 .pl-4 {
@@ -988,22 +1025,6 @@ video {
 
 .pt-24 {
   padding-top: 6rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-1 {
-  padding-left: 0.25rem;
-}
-
-.pl-16 {
-  padding-left: 4rem;
 }
 
 .text-center {
@@ -1105,6 +1126,10 @@ body{
 }
 
 @media (min-width: 768px) {
+  .md\:m-4 {
+    margin: 1rem;
+  }
+
   .md\:mx-40 {
     margin-left: 10rem;
     margin-right: 10rem;
@@ -1153,6 +1178,11 @@ body{
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:text-6xl {

@@ -1,33 +1,34 @@
 import { useState } from 'react'
 
 //images
-import logo from "../src/assets/images/logo.svg"
-import roundDownArrowIcon from "../src/assets/images/round-down-arrow.svg"
-import rightArrowIcon from "../src/assets/images/right-arrow.svg"
-import inboxIcon from "../src/assets/images/inbox.svg"
-import personOne from "../src/assets/images/person-1.png"
-import personTwo from "../src/assets/images/person-2.png"
-import personThree from "../src/assets/images/person-3.png"
-import personFour from "../src/assets/images/person-4.png"
-import rating from "../src/assets/images/rating.png"
-import tools from "../src/assets/images/tools.png"
-import contact from "../src/assets/images/contact.png"
-import collabration from "../src/assets/images/collabration.png"
-import collabrationItem from "../src/assets/images/collabration-item.png"
-import nurse from "../src/assets/images/nurse.png"
-import logoWhite from "../src/assets/images/logo-white.svg"
-import facebook from "../src/assets/images/facebook.svg"
-import twitter from "../src/assets/images/twitter.svg"
-import receiver from "../src/assets/images/call-receiver.svg"
-import instagram from "../src/assets/images/instagram.svg"
-import whatsapp from "../src/assets/images/whatsapp.svg"
-import mail from "../src/assets/images/mail.svg"
-import rightArrowInput from "../src/assets/images/right-arrow-input.svg"
+import logo from "./app/assets/images/logo.svg"
+import roundDownArrowIcon from "./app/assets/images/round-down-arrow.svg"
+import rightArrowIcon from "./app/assets/images/right-arrow.svg"
+import inboxIcon from "./app/assets/images/inbox.svg"
+import personOne from "./app/assets/images/person-1.png"
+import personTwo from "./app/assets/images/person-2.png"
+import personThree from "./app/assets/images/person-3.png"
+import personFour from "./app/assets/images/person-4.png"
+import rating from "./app/assets/images/rating.png"
+import tools from "./app/assets/images/tools.png"
+import contact from "./app/assets/images/contact.png"
+import collabration from "./app/assets/images/collabration.png"
+import collabrationItem from "./app/assets/images/collabration-item.png"
+import nurse from "./app/assets/images/nurse.png"
+import logoWhite from "./app/assets/images/logo-white.svg"
+import facebook from "./app/assets/images/facebook.svg"
+import twitter from "./app/assets/images/twitter.svg"
+import receiver from "./app/assets/images/call-receiver.svg"
+import instagram from "./app/assets/images/instagram.svg"
+import whatsapp from "./app/assets/images/whatsapp.svg"
+import mail from "./app/assets/images/mail.svg"
+import rightArrowInput from "./app/assets/images/right-arrow-input.svg"
+import copyright from "./app/assets/images/copyright.svg"
 
 
 // components
-import SortButton from './assets/app/components/SortButton'
-import PersonUi from './assets/app/components/PersonUi'
+import SortButton from './app/components/SortButton'
+import PersonUi from './app/components/PersonUi'
 
 
 function App() {
@@ -226,9 +227,9 @@ function App() {
       </section>
 
 
-      <footer className="bg-brand-linear-color-2 flex flex-col md:flex-row items-center justify-between  mt-16 px-24 pt-12 pb-6">
+      <footer className="bg-brand-linear-color-2 flex flex-col md:flex-row  justify-between  mt-16 px-24 pt-12 pb-6">
 
-        <div className="column-1 w-3/12 p-1">
+        <div className="column-1 md:w-3/12 p-1">
           <img src={logoWhite} alt="logo white" className='w-10/12' />
           <p className="text-white my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <div className="social-icons flex">
@@ -238,30 +239,30 @@ function App() {
           </div>
         </div>
 
-        <div className="column-2 w-3/12">
+        <div className="column-2 md:w-3/12 py-2">
 
-          <div className="flex m-2">
+          <div className="flex m-4 ml-0">
             <img src={receiver} alt="receiver" />
-            <p className="text-white px-3">+91-8853923455</p>
+            <p className="text-white whitespace-nowrap  px-3">+91-8853943455</p>
           </div>
-          <div className="flex m-2">
+          <div className="flex m-4 ml-0">
             <img src={whatsapp} alt="whatsapp" />
-            <p className="text-white px-3">
+            <p className="text-white whitespace-nowrap  px-3">
               +91-4567895478
             </p>
           </div>
-          <div className="flex m-2">
+          <div className="flex m-4 ml-0">
             <img src={mail} alt="mail" />
-            <p className="text-white px-3">patientgrid@gmail.com</p>
+            <p className="text-white whitespace-nowrap  px-3">patientgrid@gmail.com</p>
           </div>
         </div>
 
-        <div className="column-3 w-3/12"><p className="font-medium text-[20px] text-white">Subscribe Newsletter</p>
-          <div className="inputContainer  relative left-0">
+        <div className="column-3 md:w-3/12 py-8"><p className="font-medium text-[20px] text-white">Subscribe Newsletter</p>
+          <div className="inputContainer my-4  relative left-0">
 
 
-            <input type="text" placeholder='Email' className='absolute px-4 py-1  rounded-3xl   left-0 top-0 ' />
-            <button className='absolute -right-0 -top-[5px] p-1'>
+            <input type="text" placeholder='Email' className='absolute px-4 py-1  rounded-3xl   left-0 right-0 top-0 block' />
+            <button className='absolute -right-10 -top-[5px] p-1'>
               <img className='w-8/12' src={rightArrowInput} alt="Start For Free icon" />
             </button>
           </div>
@@ -278,11 +279,11 @@ function App() {
         <p className="text-white m-4">Plans</p>
         <p className="text-white  m-4">More</p>
       </div>
-      <p className="bg-brand-linear-color-2 text-center text-white  p-4">
+      <div className="bg-brand-linear-color-2 text-center text-white  p-4 flex items-center justify-center">
 
-        Copyright 2023.All Rights Reserved.
+      <img src={copyright} alt="copyright" className='px-2'/> Copyright 2023.All Rights Reserved.
 
-      </p>
+      </div>
 
     </div>
   )
