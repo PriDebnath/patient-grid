@@ -1,0 +1,22 @@
+@tailwind base ;
+@tailwind components ;
+@tailwind utilities ;
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.linearBackground{
+  background: linear-gradient(to left ,rgba(135,206,250,1),rgba(42,8,150,1),rgba(135,206,250,1));
+  background-size: 200%;
+  animation: linearBg      4s infinite linear alternate;
+  transition: all 1s;
+  
+  }
+
+  @keyframes linearBg {
+    100%{
+      background-position: 100%;
+    }
+  }
